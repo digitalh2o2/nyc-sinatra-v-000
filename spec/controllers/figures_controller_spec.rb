@@ -105,7 +105,7 @@ describe FiguresController do
   it "allows you to edit a single figure" do
     @figure = Figure.first
     visit "/figures/#{@figure.id}/edit"
-    fill_in :figure_name, with: "Missy"
+    fill_in :figure_name, with: "Beyonce"
     fill_in :new_landmark, with: "Big Tower"
     click_button "Edit Figure"
     @figure = Figure.first
@@ -113,7 +113,7 @@ describe FiguresController do
     expect(page.body).to include(@figure.name)    
 
     expect(page.body).to include("Big Tower")
-    expect(@figure.name).to eq("Missy")
+    expect(@figure.name).to eq("Beyonce")
 
   end
 end

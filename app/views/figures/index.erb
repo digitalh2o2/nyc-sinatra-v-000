@@ -1,0 +1,9 @@
+<h1>Figures</h1>
+<% @figures.each do |figure| %>
+<ul>
+	<li><%= figure.name %></li>
+</ul>
+<% end %>
+<form method="get" action="/figures/new">
+	<input type="submit" value="Create">
+</form>
