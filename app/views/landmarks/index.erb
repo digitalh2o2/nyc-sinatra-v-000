@@ -1,0 +1,7 @@
+<h1>Landmarks</h1>
+<% @landmarks.each do |landmark| %>
+	<li>Landmark Name: <%= landmark.name %></li>
+	<li>Year Completed: <%= landmark.year_completed %></li>
+<% end %>
+<br></br>
+Click <a href="/landmarks/new">HERE</a> to create new Landmark.
